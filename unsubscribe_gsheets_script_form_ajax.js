@@ -14,9 +14,9 @@ $.fn.serializeObject = function() {
   return o;
 };
 
-var $form = $("form#join-form"),
+var $form = $("form#unsubscribe-form"),
   url =
-    "https://script.google.com/macros/s/AKfycbz1yXFCt7nFu-zpkEfLgMtQjXEMgN_aV_GXVbQ3-guQxRwmhAE/exec";
+    "https://script.google.com/macros/s/AKfycbwyS4Us0lkzSDiFNLrikWOyYTSrAqYvqXhWRfw20l4fR6HtkGg/exec";
 
 // Variable to hold request
 var request;
@@ -41,7 +41,6 @@ $("#submit-form").on("click", function(e) {
   // Disabled form elements will not be serialized.
   $inputs.prop("disabled", true);
 
-  // Fire off the request
   var request = $.ajax({
     url: url,
     method: "GET",
@@ -51,7 +50,7 @@ $("#submit-form").on("click", function(e) {
 
   // Callback handler that will be called on success
   request.done(function(response, textStatus, jqXHR) {
-    alert("Your netID was recorded. Thanks!");
+    alert("You have successfully unsubscribed.");
   });
 
   // Callback handler that will be called on failure
