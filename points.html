@@ -66,6 +66,7 @@
         $("#footer").load("footer.html");
       });
     </script>
+    <script src="points.js"></script>
   </head>
 
   <body>
@@ -86,7 +87,12 @@
                 <input type="text" name="netID" id="signinNetID" />
               </h6>
               <div class="button-signin">
-                <button type="submit" id="submitSignin" class="btn">
+                <button
+                  type="submit"
+                  id="submitSignin"
+                  class="btn"
+                  onclick="getUser()"
+                >
                   Sign In
                 </button>
               </div>
@@ -107,8 +113,9 @@
                 <input type="text" name="netID" id="lastName" />
               </h6>
             </form>
-            <div id="points"></div>
           </div>
+
+          <div id="points"></div>
         </div>
       </div>
       <div id="footer"></div>
