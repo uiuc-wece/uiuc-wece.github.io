@@ -1,0 +1,16 @@
+{
+  "/_app": "pages/_app.js",
+  "/about": "pages/about.html",
+  "/api/hello": "pages/api/hello.js",
+  "/board": "pages/board.html",
+  "/calendar": "pages/calendar.html",
+  "/committees": "pages/committees.html",
+  "/contactus": "pages/contactus.html",
+  "/": "pages/index.html",
+  "/join": "pages/join.html",
+  "/sponsors": "pages/sponsors.html",
+  "/unsubscribe": "pages/unsubscribe.html",
+  "/_error": "pages/_error.js",
+  "/_document": "pages/_document.js",
+  "/404": "pages/404.html"
+}
